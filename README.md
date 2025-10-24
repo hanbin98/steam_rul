@@ -1,4 +1,4 @@
-# steam_rul
+# STEAM_rul
 The Python files in this project are for battery life prediction with current as a key variable.
 The implementation-oriented description of the code contents and their execution order is as follows:
 
