@@ -1,0 +1,15 @@
+The Python files in this project are for battery life prediction with current as a key variable.
+The implementation-oriented description of the code contents and their execution order is as follows:
+
+1. data_split.py
+Segregates all CSV files located under the 'data\all' directory into training and test datasets and saves them accordingly.
+
+2. train_lgbm.py
+Trains a LightGBM model that takes charging-protocol information as input and predicts four features(voltage, internal resistance, the mean of dQ/dV, and the variance of dQ/dV).
+The trained model is saved to 'models\lgbm'.
+
+3. train.py
+Trains a 1D CNN-LSTM model. The trained model is exported to the 'export' directory.
+
+4. test.py
+Uses the saved model to select three datasets from the test set defined within the code, generates predictions, and saves the resulting plots.
