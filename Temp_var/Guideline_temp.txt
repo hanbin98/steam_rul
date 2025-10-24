@@ -1,7 +1,0 @@
-The Python files in this project are designed for battery life prediction with temperature as a key variable.
-The implementation-oriented description of the code is as follows.
-
-temp.py
-This python code targets battery life prediction with temperature as a key variable: in particular, temp.py defines a general empirical model for all CSV files in the 'data' directory and fits its coefficients using Hamiltonian Monte Carlo (HMC) to estimate their posterior distributions.
-The model is Qd = 2 - (a*T*N)*exp(d*I) - exp(b*(V-1))*exp(c*N), 
-where Qd denotes discharge capacity, T ambient temperature, N the charge/discharge cycle count, I discharge current, and V discharge voltage, with a,b,c,d being the coefficients to be inferred. Prediction results generated from this model are saved to the 'plot' directory.
